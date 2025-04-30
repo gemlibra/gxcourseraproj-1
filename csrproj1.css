@@ -1,0 +1,100 @@
+
+
+body{
+  background-color: grey;
+  font-family: Times New Roman, Times, sans-serif;
+  box-sizing: border-box;
+}
+
+.container_main{
+  background-color: gray;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.main_hdr{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.col-1{
+  width: 350px;
+  height: 200px;
+  background-color: teal;
+  border: 2px solid green;
+  padding: 3px;
+  display: block;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+#chickspan{
+  width: 50px;
+  height: 15px;
+  border: 1px solid red;
+  display: block;
+  float: right;
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 73px;
+  background-color: yellow;
+  padding: 5px;
+  text-align: center;
+}
+
+.col-2{
+  width: 350px;
+  height: 200px;
+  background-color: teal;
+  border: 2px solid green;
+  padding: 3px;
+  display: block;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+#beefspan{
+  width: 50px;
+  height: 15px;
+  border: 1px solid red;
+  display: block;
+  float: right;
+  margin-bottom: 30px;
+  position: relative;
+  bottom: 73px;
+  background-color: purple;
+  padding: 5px;
+  text-align: center;
+}
+
+.col-3{
+  width: 350px;
+  height: 200px;
+  background-color: teal;
+  border: 2px solid green;
+  padding: 3px;
+  display: block;
+}
+
+#sushispan{
+  width: 50px;
+  height: 15px;
+  border: 1px solid red;
+  display: block;
+  float: right;
+  margin-bottom: 39px;
+  position: relative;
+  bottom: 73px; 
+  background-color: gray;
+  padding: 5px;
+  text-align: center;
+}
+
+.pg1, .pg2, .pg3{
+  margin-top: 50px;
+}
+
+div{
+  display: flex;
+}
