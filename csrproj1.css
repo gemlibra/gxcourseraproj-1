@@ -6,12 +6,14 @@ body{
   box-sizing: border-box;
 }
 
+
 .container_main{
   background-color: gray;
   box-sizing: border-box;
   margin-top: 20px;
+  align-item: center;
 }
-
+  
 .main_hdr{
   margin-top: 20px;
   margin-bottom: 30px;
@@ -19,8 +21,8 @@ body{
 }
 
 .col-1{
-  width: 350px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   background-color: teal;
   border: 2px solid green;
   padding: 3px;
@@ -30,22 +32,22 @@ body{
 }
 
 #chickspan{
-  width: 50px;
+  width: 70px;
   height: 15px;
   border: 1px solid red;
   display: block;
   float: right;
   margin-bottom: 30px;
   position: relative;
-  bottom: 73px;
+  bottom: 92px;
   background-color: yellow;
   padding: 5px;
   text-align: center;
 }
 
 .col-2{
-  width: 350px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   background-color: teal;
   border: 2px solid green;
   padding: 3px;
@@ -55,22 +57,22 @@ body{
 }
 
 #beefspan{
-  width: 50px;
+  width: 70px;
   height: 15px;
   border: 1px solid red;
   display: block;
   float: right;
   margin-bottom: 30px;
   position: relative;
-  bottom: 73px;
+  bottom: 92px;
   background-color: purple;
   padding: 5px;
   text-align: center;
 }
 
 .col-3{
-  width: 350px;
-  height: 200px;
+  width: 300px;
+  height: 250px;
   background-color: teal;
   border: 2px solid green;
   padding: 3px;
@@ -78,23 +80,73 @@ body{
 }
 
 #sushispan{
-  width: 50px;
+  width: 70px;
   height: 15px;
   border: 1px solid red;
   display: block;
   float: right;
   margin-bottom: 39px;
   position: relative;
-  bottom: 73px; 
+  bottom: 92px; 
   background-color: gray;
   padding: 5px;
   text-align: center;
 }
 
 .pg1, .pg2, .pg3{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 div{
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  align-item: center;
+}
+
+
+/*  
+The browser should display a desktop version of the site when the width of the browser window is 992px and above. Tablet view should appear only if the width of the browser window is between 768px and 991px, inclusively. Mobile view should appear only if the width of the browser is equal to or less than 767px.
+*/
+
+@media screen only and (max-width: 992px) {
+  .chickspan{
+   display: flex;
+    flex-direction: column;
+      }
+  }
+ 
+/*
+  @media screen only and(min-width: 768px) {
+  .beefspan{
+    background-color: green;
+      }
+  }
+
+@media screen only and(min-width: 992px) {
+  .sushispan{
+    background-color: blue;
+      }
+  }
+
+*/
+
+
+@media screen only and (min-width: 767px) and (max-width:768px){
+     .chickspan{
+        background-color: red;
+      }
+}
+
+@media screen only (min-width: 769px) and (max-width: 992) {
+      .beefspan{
+         background-color: blue;
+    }
+}
+
+@media screen only and (min-width: 993px) and (max-width: 1200px){
+
+     .sushispan{    
+         background-color: green;
+      }
 }
